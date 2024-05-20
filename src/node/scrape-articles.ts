@@ -1,13 +1,5 @@
-import axios from "axios";
-// import * as cheerio from "cheerio";
-// import * as fs from "fs";
 import puppeteer from "puppeteer";
-
-interface Article {
-  title: string;
-  link: string;
-  text: string;
-}
+import { Article } from "../types/Article";
 
 async function scrapeArticles() {
   const browser = await puppeteer.launch();
